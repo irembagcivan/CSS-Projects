@@ -3,23 +3,23 @@
     <head>
         <style>
             #sayfa{
-                border-style: solid;
-                border-color: black;
-                border-width: 2px;
-                width: 400px;
-                min-height: 350px;
-                margin: auto;
+                border-style: solid; /* kenarlık düz çizgi olur*/
+                border-color: black; 
+                border-width: 2px; /* kenarlık kalınlığı 2px olur */
+                width: 400px; /* kutu genişliğini sabit 400px yapar */
+                min-height: 350px; /* kutunun minimum yüksekliğini 350px belirler. İçerik uzarsa kutu da dikeyde uzayabilir */
+                margin: auto; /* kutuyu ekranda yatay olarak ortalar */
             }
             header{
-                border-style: dotted;
+                border-style: dotted; /* kenarlığı noktalı çizgi yapar */
                 border-color: red;
-                width: 360px;
-                height: 50px;
-                margin: auto;
+                width: 360px; /* genişliği 360px yapar */
+                height: 50px; /* yüksekliği sabit 50 px yapar*/
+                margin: auto; /* #sayfa kutusunun içinde yatayda ortalar */
                 background-color: beige;
             }
             nav{
-                border-style: dashed;
+                border-style: dashed; /* kenarlığı kesikli çizgi yapar */
                 border-color: blue;
                 width: 360px;
                 height: 30px;
@@ -27,26 +27,26 @@
                 background-color: rgb(220, 245, 225);    
             }
             article{
-                border-style: solid;
+                border-style: solid; /* düz kenarlık */
                 border-color: green;
                 width: 200px;
                 min-height: 200px;
                 margin: auto;
                 background-color: rgb(245, 220, 220);
-                float: left;   
-                position: relative; 
-                left: 19px; 
+                float: left; /* kutuyu sola yaslar, böylece yanına başka eleman gelebilir */
+                position: relative; /* göreceli konumlandırma*/
+                left: 19px; /* Kutuyu bulunduğu normal konumdan 19px sağa kaydırır (soldan iter)  */ 
             }
             aside{
                 border-style: solid;
                 border-color: green;
                 width: 160px;
                 min-height: 200px;
-                margin: auto;
+                margin: auto; /* kutuyu ekranda yatay olarak ortalar */
                 background-color: rgb(226, 220, 245);
-                float: right;   
+                float: right; /* kutuyu sağa yaslar (böylece article ile aside yan yana gelir) */
                 position: relative;
-                right: 19px;        
+                right: 19px; /* kutuyu bulunduğu konumdan 19 piksel sola kaydırır (sağdan iter)*/
             }
             footer{
                 border-style: double;
@@ -55,16 +55,16 @@
                 min-height: 30px;
                 margin: auto;
                 background-color: rgb(226, 220, 245);
-                float: left;   
-                position: relative;
-                left: 19px;   
+                float: left; /* kutuyu sola yaslar, böylece yanına başka eleman gelebilir */ 
+                position: relative; /* göreceli konumlandırma*/
+                left: 19px; /* kutuyu bulunduğu konumdan 19 piksel sola kaydırır (sağdan iter)*/
             }
         </style>
     </head>
     <body>
         <div id="sayfa">
             <header>
-                BURASI BANNER
+                BAŞLIK
             </header>
             <nav>
                 ANA MENÜ
